@@ -14,7 +14,7 @@ ENV ZAMMAD_DB_USER zammad
 ENV RAILS_ENV production
 ENV RAILS_SERVER puma
 ENV GIT_URL https://github.com/zammad/zammad.git
-ENV GIT_BRANCH develop
+ENV GIT_BRANCH stable
 ENV ES_SKIP_SET_KERNEL_PARAMETERS true
 
 LABEL org.label-schema.build-date="$BUILD_DATE" \
