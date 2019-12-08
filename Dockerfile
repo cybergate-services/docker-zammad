@@ -1,6 +1,11 @@
 FROM ruby:2.5.5-stretch
 MAINTAINER Zammad.org <info@zammad.org>
 ARG BUILD_DATE
+RUN apt-get update
+RUN apt-get install -y locales locales-all
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 ENV ZAMMAD_DIR /opt/zammad
 ENV ZAMMAD_USER zammad
